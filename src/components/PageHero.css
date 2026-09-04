@@ -1,0 +1,40 @@
+.page-hero {
+  position: relative;
+  background: var(--navy);
+  color: var(--white);
+  overflow: hidden;
+}
+
+.page-hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(100deg, transparent 30%, #000 100%);
+  -webkit-mask-image: linear-gradient(100deg, transparent 30%, #000 100%);
+}
+
+.page-hero__inner {
+  position: relative;
+  padding: clamp(48px, 7vw, 84px) var(--space-lg);
+  max-width: var(--max-width);
+}
+
+.page-hero .busbar__label {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.page-hero__title {
+  color: var(--white);
+  font-size: clamp(2rem, 4.4vw, 3.1rem);
+  margin-bottom: var(--space-md);
+  max-width: 18ch;
+}
+
+.page-hero__lead {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.05rem;
+  max-width: 62ch;
+  margin: 0;
+}
